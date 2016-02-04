@@ -1,3 +1,3 @@
 # smith
-My web site
+My personal web site and portfolio
 test
