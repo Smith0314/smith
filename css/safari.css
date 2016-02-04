@@ -75,6 +75,7 @@ video::-webkit-media-controls {
 	}
 
 	.logoSytle{
+		margin: 35px 0px 0px 0px;
 		stroke-width: 2;
 		width: 100%;
 		height: auto; 
@@ -156,8 +157,9 @@ video::-webkit-media-controls {
 	}
 
 	.linkedin {
+		position: fixed;
 		float:right;
-		margin: 13px 15px 20px 20px
+		margin: 13px 15px 20px 97%
 
 	}
 	.behance {
