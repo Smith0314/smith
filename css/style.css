@@ -34,6 +34,9 @@ svg {
 	height: auto;
 	position: relative;
 } 
+video::-webkit-media-controls {
+    display: none;
+}
 
 	@media screen and (min-width: 769px) {
     .logo {
