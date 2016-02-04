@@ -27,6 +27,10 @@
 		height: 100%;
 		background-color: #000000;
 	}
+	
+	video::-webkit-media-controls {
+    display: none;
+}
 
 	@media screen and (min-width: 769px) {
     .logo {
