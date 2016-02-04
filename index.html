@@ -950,17 +950,4 @@ $(window).bind('mousewheel', function(){
 
 </script>
 
-<script type="text/javascript">
-    var oVideoTag = document.getElementById('bgvid');
-    var oLink = document.getElementById('startVideoLink');
-    if (oLink && oVideoTag) {
-        oLink.addEventListener('click',function(e) {
-            oVideoTag.play();
-            setTimeout(function() {
-                oVideoTag.controls = 'controls';
-            },2500);
-        },false);
-    }
-</script>
-
 </body></html>
