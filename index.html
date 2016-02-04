@@ -21,12 +21,33 @@ transform: translateX(-50%) translateY(-50%);
 </style>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="all.css" media="screen">
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width: 1920px)">
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (max-width: 1919px)">
+<script>
+
+function includeLinkStyle(url) {
+ var link = document.createElement("link");
+ link.rel = "stylesheet";
+ link.type = "text/css";
+ link.href = url;
+ document.getElementsByTagName("head")[0].appendChild(link);
+}
+
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+if (isSafari) {
+        includeLinkStyle("css/safari.css")
+    }
+    if (isChrome) {
+       includeLinkStyle("css/style.css")
+    }  
+
+</script>
+    
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">   
+    </script>
 </head>
+
 <body style="">
 <video autoplay="no" loop="" poster="" id="bgvid">
 <source id="change">
@@ -888,7 +909,7 @@ transform: translateX(-50%) translateY(-50%);
     'mouseover': function() {
       $behanceAni.show();
       $behanceIcon.hide();
-      $("#change").replaceWith("<source id='change' src='video/be.webm' type='video/webm'>");
+      $("#change").replaceWith("<source id='change' src='be.webm' type='video/webm'>");
       video.load();
       video.play();
     },
@@ -907,7 +928,7 @@ transform: translateX(-50%) translateY(-50%);
     'mouseover': function() {
       $githubAni.show();
       $githubIcon.hide();
-      $("#change").replaceWith("<source id='change' src='video/git.webm' type='video/webm'>");
+      $("#change").replaceWith("<source id='change' src='git.webm' type='video/webm'>");
       video.load();
       video.play();
     },
@@ -926,7 +947,7 @@ transform: translateX(-50%) translateY(-50%);
     'mouseover': function() {
       $appleAni.show();
       $appleIcon.hide();
-      $("#change").replaceWith("<source id='change' src='video/app.webm' type='video/webm'>");
+      $("#change").replaceWith("<source id='change' src='app.webm' type='video/webm'>");
       video.load();
       video.play();
     },
@@ -946,8 +967,10 @@ $(window).bind('mousewheel', function(){
 
     document.querySelector('animate').beginElement();
 
-  });
+  });  
 
 </script>
+
+
 
 </body></html>
