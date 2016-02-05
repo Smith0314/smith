@@ -92,7 +92,7 @@ video::-webkit-media-controls {
 
 	.buttons {
 		margin: 0px auto;
-		width: 60%;
+		width: 50%;
 		height: auto;
 		text-align: center;
 	}
@@ -114,7 +114,7 @@ video::-webkit-media-controls {
 
 	.logoSytle{
 		margin: 55px 0px 0px 0px;
-		stroke-width: 6;
+		stroke-width: 8;
 		width: 65%;
 		height: auto; 
 	}
