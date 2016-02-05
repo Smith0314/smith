@@ -82,7 +82,7 @@ video::-webkit-media-controls {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
     .logo {
 		margin: 20px auto;
 		width: 90%;
